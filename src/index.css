@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/dm-sans/DMSans-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/lora/Lora-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+:root {
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-black: #1c1c1c;
+  --color-grey: #777777;
+
+  /* Brand */
+  --color-primary: #386b61;
+  --color-secondary: #dce8e3;
+  --color-accent: #c58b55;
+
+  /* Feedback */
+  --color-ok: #39845b;
+  --color-warning: #b65c42;
+
+  /* Typography */
+  --font-body: "DM Sans", sans-serif;
+  --font-heading: "Lora", serif;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+main {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
