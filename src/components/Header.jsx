@@ -1,8 +1,17 @@
+import LanguageSwitcher from "./LanguageSwitcher";
+import "./styles/header.css";
+
 function Header() {
   return (
-    <div>
-      <h1>Header goes here</h1>
-    </div>
+    <header>
+      <h1>Ursprungskraft</h1>
+      <div>
+        <LanguageSwitcher />
+        <div>
+          <p>Menu goes here</p>
+        </div>
+      </div>
+    </header>
   );
 }
 
