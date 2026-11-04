@@ -1,7 +1,7 @@
-import Home from "./routes/Home";
-import Impressum from "./routes/Impressum";
-import NotFound from "./routes/NotFound";
-import Layout from "./Layout";
+import Home from "@/routes/Home";
+import Impressum from "@/routes/Impressum";
+import NotFound from "@/routes/NotFound";
+import Layout from "@/Layout";
 import { Routes, Route, Navigate } from "react-router";
 
 function App() {

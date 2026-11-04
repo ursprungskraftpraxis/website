@@ -1,0 +1,78 @@
+/* Header layout */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-header__brand {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.site-header__controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Mobile navigation toggle */
+
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 1001;
+
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  background: transparent;
+  color: var(--color-black);
+
+  font-family: var(--font-body);
+  font-size: 2rem;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Keep the toggle above the open mobile menu */
+
+.menu-toggle[aria-expanded="true"] {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Desktop navigation and language switcher are hidden on mobile */
+
+.desktop-menu,
+.desktop-language-switcher {
+  display: none;
+}
+
+/* Desktop layout */
+
+@media (min-width: 1024px) {
+  .desktop-menu,
+  .desktop-language-switcher {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}

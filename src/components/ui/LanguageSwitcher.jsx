@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router";
-import "./styles/languageSwitcher.css";
+import "@/components/ui/styles/languageSwitcher.css";
 
 function LanguageSwitcher() {
   const location = useLocation();

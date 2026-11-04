@@ -1,8 +1,16 @@
+import Hero from "@/sections/Hero";
+import Services from "@/sections/Services";
+import Contact from "@/sections/Contact";
+import About from "@/sections/About";
+
 function Home() {
   return (
-    <div>
-      <h1>Home goes here</h1>
-    </div>
+    <>
+      <Hero />
+      <About />
+      <Services />
+      <Contact />
+    </>
   );
 }
 
